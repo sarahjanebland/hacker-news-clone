@@ -1,0 +1,18 @@
+<div class="container">
+  <span>Hi <%= @user.first_name %></span>
+
+  <div>
+    <a href="/users/<%= @user.id %>/posts">View all of your posts</a>
+  </div>
+  <div>
+    <a href="/users/<%= @user.id %>/comments">View all of your comments</a>
+  </div>
+  <button type="button" class="new-post-button">Create new post</button>
+  <div class="post-form">
+    <form class="new-posts" action='/posts/new' method="post">
+      <input type="text" name="title" placeholder="title goes here"/><br>
+      <textarea rows=15 cols=40 name='content' placeholder="enter content here"></textarea><br>
+      <input type='submit' value='Create Post'/>
+    </form>
+  </div>
+</div>

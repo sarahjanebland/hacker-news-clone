@@ -1,0 +1,23 @@
+<div class="container"> 
+  <div class="post">
+    <h2><%= @post.title %></h2>
+    <div><%= @post.content %></div>
+  </div>
+
+  <div>
+    <form  class="comment-form" method='post' action='/comments/new'>
+      <textarea rows=5 cols=30 class = "comment-field" name='content' placeholder='comment goes here!'></textarea>
+      <input type="hidden" name='post_id' value="<%= @post.id %>">
+      <div>
+        <input type='submit' value='Comment'/>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="comment-list">
+    <% @comments.each do |comment| %>
+      <%= erb(:_comments_block, :layout => false, :locals => {:comment => comment}) %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div>
+  <% @posts.each do |post| %>
+    <div>
+      <ul class="content-list">
+        <li>
+          <a href="/posts/<%= post.id %>">
+            <%= post.title %>
+          </a>
+        </li>
+        <li><%= post.content %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
+

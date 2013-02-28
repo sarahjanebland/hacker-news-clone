@@ -1,0 +1,9 @@
+<div class="container">
+  <% @comments.each do |comment| %>
+    <div>
+      <ul class="content-list">
+        <li><%= comment.content %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
