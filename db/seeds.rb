@@ -1,5 +1,5 @@
-u = User.create first_name: "Mary", last_name: "Lee", email: "cool@cool.com", hashed_password: "apple" 
-u2 = User.create first_name: "Sarah", last_name: "Bland", email: "socool@cool.com", hashed_password: "pear"
+u = User.create first_name: "Mary", last_name: "Lee", email: "cool@cool.com", hashed_password: "apples" 
+u2 = User.create first_name: "Sarah", last_name: "Bland", email: "socool@cool.com", hashed_password: "pearcake"
 
 
 

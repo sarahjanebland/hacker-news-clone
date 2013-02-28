@@ -2,7 +2,7 @@
   <% @comments.each do |comment| %>
     <div>
       <ul class="content-list">
-        <li><%= comment.content %></li>
+        <li><a href="/posts/<%= comment.post.id %>"><%= comment.content %></a></li>
       </ul>
     </div>
   <% end %>

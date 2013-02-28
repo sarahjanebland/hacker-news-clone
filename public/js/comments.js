@@ -7,7 +7,6 @@ $(document).ready(function(){
       dataType: "json",
       data: $(this).serialize()
     }).done(function(response) {
-      debugger
       $(".comment-list").append(response.comment);
     }).fail(function(){
     }).always(function() {

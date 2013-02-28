@@ -1,10 +1,4 @@
-.page-title {
-  display: inline-block;
-}
-
-.profile-link {
-  display: inline-block;
-}
+/*these for user main page*/
 
 .post-form {
   padding: 30px 0 0 15px;
@@ -21,3 +15,111 @@
 .container {
   margin: 10px;
 }
+
+.new-post-button {
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.user-greeting {
+	margin: 30px 0 30px 0;
+	font-size: 30px;
+}
+
+.new-post-button:hover {
+	background: purple;
+	color: white;
+}
+
+form input[type='submit']{
+	border-radius: 10px;
+}
+
+form input[type='submit']:hover {
+	background: purple;
+	color: white;
+}
+/*these for header*/
+
+.page-title {
+  display: inline-block;
+}
+
+.profile-link {
+	float: right;
+	margin: 30px 20px 30px 0;
+	position: relative;
+	padding: 2px;
+}
+
+.profile-link:hover {
+	background: purple;
+	border-radius: 10px;
+}
+
+.logout {
+	display: inline;
+	float: right;
+	margin: 30px 15px 30px auto;
+	position: relative;
+}
+
+.logout input {
+	background: black;
+	color: white;
+	border: none;
+}
+
+.header {
+	background: black;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+
+/*these for posts page*/
+
+ul {
+	list-style: none;
+}
+
+ul li a{
+	text-decoration: none;
+	font-weight: 700;
+	color: black;
+}
+
+ul li a:hover {
+	color: white;
+	background: purple;
+	padding: 0 5px 0 5px;
+}
+
+/*these for single post page*/
+
+.post {
+	padding: 0 0 20px 0;
+}
+
+.comment-form {
+	padding: 20px 0 0 0;
+}
+
+.comment-form textarea {
+	margin-bottom: 20px;
+}
+
+/*index page*/
+
+form input{
+	margin: 10px 0 5px 10px;
+}
+
+.sign-up {
+	display: none;
+}
+

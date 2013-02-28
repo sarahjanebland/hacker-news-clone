@@ -1,5 +1,11 @@
 <div class="header">
   <% root_url = current_user ? "/posts" : "/" %>
   <a href="<%= root_url%>" class="page-title"><h1>Hacker News Clone</h1></a>
-  <a href="/users/<%= current_user.id %>" class="profile-link">Profile</a>
+  <% if current_user%>
+  	<a href="/users/<%= current_user.id %>" class="profile-link">Profile</a> 
+  	<form class="logout" action="/users/logout" method="post" >
+  		<input  type="submit" value="Logout"/>
+  	</form>
+  <%end%>
 </div>
+	

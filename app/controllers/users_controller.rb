@@ -44,3 +44,9 @@ post '/users/login' do
   end
 end
 
+post '/users/logout' do
+  logout
+  redirect '/'
+end
+  
+
